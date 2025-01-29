@@ -23,7 +23,7 @@ st.title("📊 Financial Dashboard - NIFTY Green Energy")
 # TOP HALF - LIVE & PREDICTED STOCK DATA
 # ================================
 st.markdown("### 📈 Live & Predicted Stock Prices")
-
+#tesy
 # Creating two columns for live stock and prediction graph
 col1, col2 = st.columns(2)
 
