@@ -1,1 +1,7 @@
-
+yfinance
+numpy
+pandas
+plotly
+tensorflow
+scikit-learn
+streamlit
