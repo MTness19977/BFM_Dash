@@ -4,6 +4,9 @@ import pandas as pd
 import plotly.graph_objects as go
 import plotly.express as px
 
+# ✅ Move this to the top!
+st.set_page_config(page_title="Stock Dashboard", layout="wide")
+
 # Dummy Data
 companies = ["Adani Green", "Tata Power", "JSW Energy", "Suzlon Energy", "NHPC", "SJVN"]
 selected_company = st.sidebar.selectbox("Select a Company", companies)
@@ -18,9 +21,6 @@ dummy_buy_sell = "BUY" if np.random.rand() > 0.5 else "SELL"
 top_10_companies = ["Adani Green", "Tata Power", "JSW Energy", "Suzlon Energy", "NHPC", 
                      "SJVN", "Reliance Power", "Power Grid", "NTPC", "CESC"]
 market_caps = [120, 95, 85, 70, 60, 55, 50, 45, 40, 35]  # Example market caps
-
-# Set Full-Width Layout
-st.set_page_config(page_title="Stock Dashboard", layout="wide")
 
 # Page Title
 st.title("📊 Stock Analysis Dashboard")
